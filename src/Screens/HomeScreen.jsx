@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 
 const HomeScreen = () => {
     return (
-        <View style={styles.container}>
+        <View style={styles.container} >
             <View style={styles.head}>
                 <Text style={styles.name}>Newsletter</Text>
             </View>

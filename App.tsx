@@ -8,8 +8,12 @@ const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="MainTabs" component={MyTabs} />
+      <Stack.Navigator   screenOptions={{
+        headerShown: true,
+        headerStyle: { backgroundColor: '#2196f3' }, 
+        headerTintColor: '#fff',
+      }}>
+        <Stack.Screen name="Newsletter" component={MyTabs}  />
       </Stack.Navigator>
     </NavigationContainer>
   );
