@@ -1,6 +1,7 @@
 import React from "react";
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Image } from 'react-native';
 import MyTabs from "./src/Navigation/MyTabs";
 
 const Stack = createNativeStackNavigator();
@@ -13,7 +14,7 @@ const App = () => {
         headerStyle: { backgroundColor: '#2196f3' }, 
         headerTintColor: '#fff',
       }}>
-        <Stack.Screen name="Newsletter" component={MyTabs}  />
+        <Stack.Screen name="Newsletter" component={MyTabs} />
       </Stack.Navigator>
     </NavigationContainer>
   );
