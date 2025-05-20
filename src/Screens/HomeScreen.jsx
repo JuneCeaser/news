@@ -14,22 +14,22 @@ const HomeScreen = () => {
                 
                 <ScrollView horizontal={true}  showsHorizontalScrollIndicator={false} >
                     <View style={styles.card}>
-                        <Text >Business</Text>                                                                                                    
+                        <Text style={styles.cardText}>Business</Text>                                                                                                    
                     </View>
                      <View style={styles.card}>
-                        <Text >Education</Text>                                                                                                    
+                        <Text style={styles.cardText}>Education</Text>                                                                                                    
                     </View>
                      <View style={styles.card}>
-                        <Text >Health</Text>                                                                                                    
+                        <Text style={styles.cardText}>Health</Text>                                                                                                    
                     </View>
                      <View style={styles.card}>
-                        <Text >Science</Text>                                                                                                    
+                        <Text style={styles.cardText} >Science</Text>                                                                                                    
                     </View>
                      <View style={styles.card}>
-                        <Text >Sports</Text>                                                                                                    
+                        <Text style={styles.cardText}>Sports</Text>                                                                                                    
                     </View>
                      <View style={styles.card}>
-                        <Text >Entertainment</Text>                                                                                                    
+                        <Text style={styles.cardText}>Entertainment</Text>                                                                                                    
                     </View>
                 </ScrollView>
              </View>
@@ -99,15 +99,14 @@ const styles = StyleSheet.create({
     name: {
         fontFamily: 'Kaisei HarunoUmi',
         fontSize: 35,
-        marginLeft: 20,
+        marginLeft: 15,
     },
     head: {
-        padding: 10,
+        padding: 5,
         backgroundColor: '#ffffff',
     },
     headtext: {
         marginRight: 20,
-        padding: 5,
         backgroundColor: '#ffffff',
     },
     nametext: {
@@ -117,11 +116,15 @@ const styles = StyleSheet.create({
     card: {
         flex: 1,
         backgroundColor: '#B8D2FF',
-        padding: 8,
-        margin: 2,
-        fontSize: 15,
-        width: 100,
+        padding: 4,
+       marginHorizontal: 4,
+        fontSize: 17,
         textAlign: 'center',
+    },
+    cardText: {
+        fontSize: 15,
+        color: '#000',
+        paddingHorizontal:7,
     },
     topics: {
         flexDirection: 'row',
