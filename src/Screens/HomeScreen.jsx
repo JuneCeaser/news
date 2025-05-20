@@ -33,7 +33,59 @@ const HomeScreen = () => {
                     </View>
                 </ScrollView>
              </View>
-             
+             <View style={styles.newscardlist}>
+                  <ScrollView >
+                     <View style={styles.newscard}>
+                        <View style={styles.imageContainer}><Image source={require('../../images/newsletter.jpg')} style={{ width: 350, height: 300 }} /></View>
+                        <Text style={styles.title}>Newsletter Title</Text>
+                        <Text style={styles.date}>05/20/2025</Text>
+                        <Text style={styles.description}>Daily finance news, market trends,and invesment tips from industry experts</Text>
+                    </View>
+                      <View style={styles.newscard}>
+                        <View style={styles.imageContainer}><Image source={require('../../images/newsletter.jpg')} style={{ width: 350, height: 300 }} /></View>
+                        <Text style={styles.title}>Newsletter Title</Text>
+                        <Text style={styles.date}>05/20/2025</Text>
+                        <Text style={styles.description}>Daily finance news, market trends,and invesment tips from industry experts</Text>
+                    </View>
+                       <View style={styles.newscard}>
+                        <View style={styles.imageContainer}><Image source={require('../../images/newsletter.jpg')} style={{ width: 350, height: 300 }} /></View>
+                        <Text style={styles.title}>Newsletter Title</Text>
+                        <Text style={styles.date}>05/20/2025</Text>
+                        <Text style={styles.description}>Daily finance news, market trends,and invesment tips from industry experts</Text>
+                    </View>
+                     <View style={styles.newscard}>
+                        <View style={styles.imageContainer}><Image source={require('../../images/newsletter.jpg')} style={{ width: 350, height: 300 }} /></View>
+                        <Text style={styles.title}>Newsletter Title</Text>
+                        <Text style={styles.date}>05/20/2025</Text>
+                        <Text style={styles.description}>Daily finance news, market trends,and invesment tips from industry experts</Text>
+                    </View>
+                     <View style={styles.newscard}>
+                        <View style={styles.imageContainer}><Image source={require('../../images/newsletter.jpg')} style={{ width: 350, height: 300 }} /></View>
+                        <Text style={styles.title}>Newsletter Title</Text>
+                        <Text style={styles.date}>05/20/2025</Text>
+                        <Text style={styles.description}>Daily finance news, market trends,and invesment tips from industry experts</Text>
+                    </View>
+                       <View style={styles.newscard}>
+                        <View style={styles.imageContainer}><Image source={require('../../images/newsletter.jpg')} style={{ width: 350, height: 300 }} /></View>
+                        <Text style={styles.title}>Newsletter Title</Text>
+                        <Text style={styles.date}>05/20/2025</Text>
+                        <Text style={styles.description}>Daily finance news, market trends,and invesment tips from industry experts</Text>
+                    </View>
+                       <View style={styles.newscard}>
+                        <View style={styles.imageContainer}><Image source={require('../../images/newsletter.jpg')} style={{ width: 350, height: 300 }} /></View>
+                        <Text style={styles.title}>Newsletter Title</Text>
+                        <Text style={styles.date}>05/20/2025</Text>
+                        <Text style={styles.description}>Daily finance news, market trends,and invesment tips from industry experts</Text>
+                    </View>
+                    <View style={styles.newscard}>
+                        <View style={styles.imageContainer}><Image source={require('../../images/newsletter.jpg')} style={{ width: 350, height: 300 }} /></View>
+                        <Text style={styles.title}>Newsletter Title</Text>
+                        <Text style={styles.date}>05/20/2025</Text>
+                        <Text style={styles.description}>Daily finance news, market trends,and invesment tips from industry experts</Text>
+                    </View>
+                  </ScrollView>
+             </View>
+
         </View>
     );
 };
@@ -75,6 +127,37 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         padding: 5,
         backgroundColor: '#ffffff',
+    },
+    newscardlist: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 10,
+        marginBottom: 150,
+        backgroundColor: '#ffffff',
+    },
+    newscard: {
+        flex: 1,
+        backgroundColor: '#ffffff',
+        padding: 8,
+        margin: 10,
+        
+        fontSize: 15,
+        width: 350,
+        textAlign: 'center',
+    },
+    imageContainer: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 5,
+    },
+    title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 5,
+    },
+    description: {
+        fontSize: 15,
+        color: '#555',
     },
 
 });
